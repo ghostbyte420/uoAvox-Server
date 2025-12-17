@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputPath>..\</OutputPath>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<RootNamespace>Server</RootNamespace>
+		<AssemblyName>Server</AssemblyName>
+		<DefineConstants>NEWTIMERS;NEWPARENT;FORGE</DefineConstants>
+		<EnableDefaultItems>true</EnableDefaultItems>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<!-- Exe Specific -->
+	<PropertyGroup>
+		<StartupObject>Server.Core</StartupObject>
+		<ApplicationIcon>uoa_logo.ico</ApplicationIcon>
+		<NoWin32Manifest>true</NoWin32Manifest>
+		<ServerGarbageCollection>true</ServerGarbageCollection>
+		<ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+	</PropertyGroup>
+
+	<!-- Assembly Info -->
+	<PropertyGroup>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Copyright>Copyright © 2025-2026 uoAvocation</Copyright>
+		<Product>uoAvox-Server</Product>
+		<Company>uoavox.studio</Company>
+		<Version>1.0.0.0</Version>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Content Include="uoa_logo.ico" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
+	</ItemGroup>
+	
+</Project>
